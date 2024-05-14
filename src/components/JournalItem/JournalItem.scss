@@ -1,0 +1,24 @@
+@import "../../assets/mixins";
+
+.JournalItem {
+  &-Header {
+    color: var(--white);
+    @include sanssemi(18, null);
+    margin-bottom: 10px;
+  }
+
+  &-Body {
+    display: flex;
+    @include sansr(16);
+    line-height: 1.2;
+  }
+
+  &-Date {
+    color: rgba(255, 255, 255, .4);
+    margin-right: 10px;
+  }
+
+  &-Text {
+    color: var(--gray);
+  }
+}

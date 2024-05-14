@@ -1,13 +1,30 @@
-import './App.css'
-import Button from './components/Button/Button.tsx'
+import React from 'react'
 
-function App() {
+import Button from './components/Button/Button.tsx'
+import CardButton from './components/CardButton/CardButton.tsx'
+import JournalItem from './components/JournalItem/JournalItem.tsx'
+
+const App: React.FC = () => {
   return (
-    <div className="fsfsfs">
+    <>
       Проект
       <br />
       <Button />
-    </div>
+      <CardButton>
+        <JournalItem
+          title="Подготовка к обновлению курсов"
+          date={new Date()}
+          text="Сегодня провёл весь день за..."
+        />
+      </CardButton>
+      <CardButton>
+        <JournalItem
+          title="Поход в горы"
+          date={new Date()}
+          text="Думал, что очень много време..."
+        />
+      </CardButton>
+    </>
   )
 }
 

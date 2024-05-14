@@ -1,0 +1,11 @@
+.CardButton {
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+  background: var(--gray-100);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--gray-200);
+  }
+}
