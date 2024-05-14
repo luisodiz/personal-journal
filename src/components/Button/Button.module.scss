@@ -1,0 +1,20 @@
+@import "../../assets/mixins";
+
+.button {
+  border-radius: 6px;
+  border: none;
+  padding: 8px 30px;
+  cursor: pointer;
+  transition: background 0.25s;
+  @include sansr();
+  color: var(--white);
+  background: var(--gray-100);
+
+  &_accent {
+    background: #312eb5;
+  }
+
+  &:hover {
+    background: #0e0c97;
+  }
+}
