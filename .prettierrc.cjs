@@ -10,5 +10,5 @@ module.exports = {
   indent_size: 2,
   max_line_length: 80,
   jsxSingleQuote: false,
-  endOfLine: "auto"
+  endOfLine: "auto",
 }
