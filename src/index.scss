@@ -1,5 +1,11 @@
 @import "assets/fonts.scss";
 
+:root {
+  --white: #fff;
+  --gray: #a3a3a3;
+  --dark: #181818;
+}
+
 html,
 body {
   width: 100%;
