@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'sansr';
+  src: url('./assets/fonts/SourceSans/SourceSans-Regular.woff2') format('woff2'), url('./assets/fonts/SourceSans/SourceSans-Regular.woff') format('woff'), url('./assets/fonts/SourceSans/SourceSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sanssm';
+  src: url('./assets/fonts/SourceSans/SourceSans-SemiBold.woff2') format('woff2'), url('./assets/fonts/SourceSans/SourceSans-SemiBold.woff') format('woff'), url('./assets/fonts/SourceSans/SourceSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
