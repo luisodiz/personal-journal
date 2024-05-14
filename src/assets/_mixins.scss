@@ -1,0 +1,11 @@
+@mixin sansr($size: 16, $lh: 28) {
+  font-family: 'sansr', sans-serif;
+  font-size: $size + px;
+  line-height: $lh + px;
+}
+
+@mixin sanssemi($size: 16, $lh: 28) {
+  font-family: 'sanssemi', sans-serif;
+  font-size: $size + px;
+  line-height: $lh + px;
+}
