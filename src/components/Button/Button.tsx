@@ -1,13 +1,12 @@
 import React from 'react'
-import cls from 'classnames'
-import styles from './Button.module.scss'
+import {cn} from '@bem-react/classname'
+
+import './Button.scss'
+
+const cnButton = cn('Button')
 
 const Button: React.FC = () => {
-  return (
-    <button className={cls(styles.button, styles.button_accent)}>
-      Сохранить
-    </button>
-  )
+  return <button className={cnButton({accent: true})}>Сохранить</button>
 }
 
 export default Button
