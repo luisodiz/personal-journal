@@ -1,4 +1,3 @@
-import React from 'react'
 import {cn} from '@bem-react/classname'
 
 import './Header.scss'
@@ -6,7 +5,7 @@ import './Header.scss'
 const cnHeader = cn('Header')
 const cnLogo = cn('Logo')
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <div className={cnHeader()}>
       <img className={cnLogo()} src="/img/logo.svg" alt="Journal Logo" />

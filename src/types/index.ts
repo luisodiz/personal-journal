@@ -1,3 +1,4 @@
 import type {JournalItem} from './JournalItem.ts'
+import type {Button} from './Button.ts'
 
-export type {JournalItem}
+export type {JournalItem, Button}

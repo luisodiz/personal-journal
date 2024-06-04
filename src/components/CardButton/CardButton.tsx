@@ -1,23 +1,14 @@
-import React, {PropsWithChildren} from 'react'
 import {cn} from '@bem-react/classname'
-import {classnames} from '@bem-react/classnames'
 
 import './CardButton.scss'
 
+import type {Button} from '../../types'
+
 const cnCardButton = cn('CardButton')
 
-interface CardButtonProps extends PropsWithChildren {
-  className?: string
-}
-
-const CardButton: React.FC<CardButtonProps> = ({className, children}) => {
+const CardButton = ({className, children}: Button) => {
   return (
-    <button
-      className={
-        className ? classnames(cnCardButton(), className) : cnCardButton()
-      }>
-      {children}
-    </button>
+    <button className={`${cnCardButton()} ${className}`}>{children}</button>
   )
 }
 

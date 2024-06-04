@@ -8,11 +8,11 @@ import Body from './layout/Body/Body.tsx'
 import Header from './components/Header/Header.tsx'
 import JournalAddButton from './components/JournalAddButton/JournalAddButton.tsx'
 import JournalList from './components/JournalList/JournalList.tsx'
-import JournalItem, {
-  type IJournalItem,
-} from './components/JournalItem/JournalItem.tsx'
+import JournalItem from './components/JournalItem/JournalItem.tsx'
 import CardButton from './components/CardButton/CardButton.tsx'
 import JournalForm from './components/JournalForm/JournalForm.tsx'
+
+import type {JournalItem as IJournalItem} from './types'
 
 export type SaveItem<T> = {
   (item: {[Property in keyof T]: any}): void

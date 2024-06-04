@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   @include sanssemi(16, 1.2);
+  color: var(--white);
 
   &.CardButton {
     text-align: center;

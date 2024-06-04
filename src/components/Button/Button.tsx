@@ -1,18 +1,18 @@
-import React, {MouseEvent} from 'react'
 import {cn} from '@bem-react/classname'
 
 import './Button.scss'
 
+import type {Button} from '../../types/Button.ts'
+
 const cnButton = cn('Button')
 
-interface ButtonProps {
+interface ButtonProps extends Button {
   text: string
-  onClick?: (e: MouseEvent<HTMLButtonElement>) => void
 }
 
-const Button: React.FC<ButtonProps> = ({text, onClick}) => {
+const Button = ({text, ...props}: ButtonProps) => {
   return (
-    <button className={cnButton({accent: true})} onClick={onClick}>
+    <button className={cnButton({accent: true})} {...props}>
       {text}
     </button>
   )

@@ -10,13 +10,13 @@ const JournalItem = ({title, date, text}: JournalItem) => {
   const formatedDate = new Intl.DateTimeFormat('ru-RU').format(date)
 
   return (
-    <div className={cnJournalItem()}>
+    <>
       <h2 className={cnJournalItem('Header')}>{title}</h2>
       <div className={cnJournalItem('Body')}>
         <div className={cnJournalItem('Date')}>{formatedDate}</div>
         <div className={cnJournalItem('Text')}>{text}</div>
       </div>
-    </div>
+    </>
   )
 }
 

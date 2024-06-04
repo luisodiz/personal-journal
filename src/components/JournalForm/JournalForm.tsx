@@ -6,11 +6,11 @@ import './JournalForm.scss'
 import Button from '../Button/Button.tsx'
 
 import type {SaveItem} from '../../App.tsx'
-import type {IJournalItem} from '../JournalItem/JournalItem.tsx'
+import type {JournalItem} from '../../types'
 
 const cnJournalForm = cn('JournalForm')
 
-interface JournalFormData extends IJournalItem {}
+interface JournalFormData extends JournalItem {}
 
 interface JournalFormProps {
   saveItem: SaveItem<JournalFormData>

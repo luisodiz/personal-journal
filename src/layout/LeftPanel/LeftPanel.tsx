@@ -1,13 +1,12 @@
-import React, {PropsWithChildren} from 'react'
 import {cn} from '@bem-react/classname'
+
+import type {PropsWithChildren} from 'react'
 
 import './LeftPanel.scss'
 
 const cnLeftPanel = cn('LeftPanel')
 
-interface LeftPanelProps extends PropsWithChildren {}
-
-const LeftPanel: React.FC<LeftPanelProps> = ({children}) => {
+const LeftPanel = ({children}: PropsWithChildren) => {
   return <div className={cnLeftPanel()}>{children}</div>
 }
 
