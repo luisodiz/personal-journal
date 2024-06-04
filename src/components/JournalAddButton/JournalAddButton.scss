@@ -1,7 +1,21 @@
+@import "../../assets/mixins";
+
 .JournalAddButton {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  @include sanssemi(16, 1.2);
+
   &.CardButton {
     text-align: center;
     padding: 10px;
     color: #fff;
+  }
+
+  &-Icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
   }
 }

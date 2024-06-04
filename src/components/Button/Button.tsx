@@ -5,15 +5,15 @@ import './Button.scss'
 
 const cnButton = cn('Button')
 
-const Button: React.FC = () => {
-  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
-    console.log(e)
-    console.log('Тест')
-  }
+interface ButtonProps {
+  text: string
+  onClick?: (e: MouseEvent<HTMLButtonElement>) => void
+}
 
+const Button: React.FC<ButtonProps> = ({text, onClick}) => {
   return (
-    <button onClick={handleClick} className={cnButton({accent: true})}>
-      Сохранить
+    <button className={cnButton({accent: true})} onClick={onClick}>
+      {text}
     </button>
   )
 }

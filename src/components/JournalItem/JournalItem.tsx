@@ -1,17 +1,12 @@
-import React from 'react'
 import {cn} from '@bem-react/classname'
 
 import './JournalItem.scss'
 
+import type {JournalItem} from '../../types'
+
 const cnJournalItem = cn('JournalItem')
 
-interface JournalItemProps {
-  title: string
-  text: string
-  date: Date
-}
-
-const JournalItem: React.FC<JournalItemProps> = ({title, date, text}) => {
+const JournalItem = ({title, date, text}: JournalItem) => {
   const formatedDate = new Intl.DateTimeFormat('ru-RU').format(date)
 
   return (
